@@ -1,6 +1,5 @@
 #r "Newtonsoft.Json"
 #load "EchoDialog.csx"
-#load "LuisDialog.csx"
 
 using System;
 using System.Net;
@@ -34,9 +33,8 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
             // one of these will have an interface and process it
             switch (activity.GetActivityType())
             {
-                case ActivityTypes.Message:
-                    await Conversation.SendAsync(activity, () => new BasicLuisDialog());
-                    //await Conversation.SendAsync(activity, () => new EchoDialog());
+                case ActivityTypes.Message:                    
+                    await Conversation.SendAsync(activity, () => new EchoDialog());
                     break;
                 case ActivityTypes.ConversationUpdate:
                     var client = new ConnectorClient(new Uri(activity.ServiceUrl));

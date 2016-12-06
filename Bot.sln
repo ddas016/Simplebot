@@ -27,7 +27,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "messages", "messages", "{F4
 	ProjectSection(SolutionItems) = preProject
 		messages\EchoDialog.csx = messages\EchoDialog.csx
 		messages\function.json = messages\function.json
-		messages\LuisDialog.csx = messages\LuisDialog.csx
 		messages\project.json = messages\project.json
 		messages\project.lock.json = messages\project.lock.json
 		messages\run.csx = messages\run.csx
