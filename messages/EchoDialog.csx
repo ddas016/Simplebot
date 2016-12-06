@@ -3,6 +3,9 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 
+using Microsoft.Bot.Builder.Luis;
+using Microsoft.Bot.Builder.Luis.Models;
+
 // For more information about this template visit http://aka.ms/azurebots-csharp-basic
 [Serializable]
 public class EchoDialog : IDialog<object>
